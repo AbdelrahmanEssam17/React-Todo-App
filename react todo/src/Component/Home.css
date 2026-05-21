@@ -7,4 +7,15 @@
   border: 1px solid black;
   display: flex;
   justify-content: center;
+  background-color: aqua;
+}
+.input {
+  width: 220px;
+  height: 30px;
+}
+.btn {
+  height: 34px;
+  width: 60px;
+  background-color: rgb(64, 64, 216);
+  color: white;
 }
