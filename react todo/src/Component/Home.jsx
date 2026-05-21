@@ -6,11 +6,33 @@ export default function Home() {
   function Add() {
     if (input.trim() === "") return;
     setTodo([...todo, input]);
+
     setInput("");
   }
   let items = [];
   for (let i = 0; i < todo.length; i++) {
-    items.push(<li key={i}>{todo[i]}</li>);
+    items.push(
+      <li key={i}>
+        {todo[i]}
+        <button
+          className="dbtn"
+          onClick={() => {
+            deleted(i);
+          }}
+        >
+          deleted
+        </button>
+      </li>,
+    );
+  }
+  function deleted(index) {
+    let undeleted = [];
+    for (let i = 0; i < todo.length; i++) {
+      if (index !== i) {
+        undeleted.push(todo[i]);
+      }
+    }
+    setTodo(undeleted);
   }
   return (
     <div className="bigdiv">

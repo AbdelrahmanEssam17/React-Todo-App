@@ -19,3 +19,9 @@
   background-color: rgb(64, 64, 216);
   color: white;
 }
+.dbtn {
+  background-color: blue;
+  margin: 10px;
+  width: 100px;
+  height: 40px;
+}
