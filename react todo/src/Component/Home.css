@@ -25,3 +25,9 @@
   width: 100px;
   height: 40px;
 }
+.updatebtn {
+  margin: 10px;
+  width: 100px;
+  height: 40px;
+  background-color: rgb(231, 231, 5);
+}
